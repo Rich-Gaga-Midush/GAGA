@@ -5,9 +5,9 @@ const store = { chats: {} }; // Assuming a store object to store messages
 // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  let notification = `*『 👻 ᴀɴᴛɪᴅᴇʟᴇᴛᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ 👻 』*\n\n`;
+  let notification = `*『𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓𝐒 𝐀𝐍𝐓𝐈𝐃𝐄𝐋𝐄𝐓𝐄』*\n\n`;
   notification += `*ᴅᴇʟᴇᴛɪᴏɴ ᴛɪᴍᴇ :* ${new Date().toLocaleString()}\n`;
-  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> ᴍᴇssᴀɢᴇ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ-ᴍᴅ`;
+  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> 𝐊𝐞𝐞𝐩 𝐮𝐬𝐢𝐧𝐠 𝐗𝐠𝐚𝐠𝐚 𝐛𝐨𝐭𝐬`;
   return notification;
  } 
 
