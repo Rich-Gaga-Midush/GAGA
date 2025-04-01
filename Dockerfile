@@ -10,8 +10,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Rich-Gaga-Midush/GAGA /root/gaga_Bot
-WORKDIR /root/gaga_Bot/
+RUN git clone https://github.com/Beltah254/BELTAH-MD /root/beltah_Bot
+WORKDIR /root/beltah_Bot/
 
 
 COPY package.json .
