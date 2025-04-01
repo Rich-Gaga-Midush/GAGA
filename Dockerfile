@@ -1,4 +1,3 @@
-
 FROM node:lts-buster
 
 RUN apt-get update && \
@@ -10,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Rich-Gaga-Midush/GAGA /root/Xgaga_Bot
-WORKDIR /root/Xgaga_Bot/
+RUN git clone https://github.com/richgagamidush/GAGA-MD  /root/zokou
+WORKDIR /root/zokou/
 
 
 COPY package.json .
@@ -22,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "gaga.js"]
+CMD ["npm", "run" , "rich"]
