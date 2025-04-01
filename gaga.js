@@ -649,7 +649,7 @@ if (texte && texte.startsWith('>')) {
           title: "Xgaga bots" ,
           body: "KEEP USING XGAGA BOTS",
           sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F" ,
-          thumbnailUrl: "" || conf.BOT_MENU_LINK,
+          thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg" || conf.BOT_MENU_LINK,
           mediaType: 1,
           showAdAttribution: true,
           renderLargerThumbnail: false
